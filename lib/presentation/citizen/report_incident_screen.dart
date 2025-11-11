@@ -136,7 +136,7 @@ class _ReportIncidentScreenState extends State<ReportIncidentScreen> {
                           decoration: _buildInputDecoration('Type', Icons.category_outlined),
                           dropdownColor: const Color(0xFF212121),
                           style: GoogleFonts.poppins(color: Colors.white),
-                          items: ['FIRE', 'EARTHQUAKE', 'FLOOD', 'OTHER']
+                          items: ['FIRE', 'EARTHQUAKE', 'FLOOD', 'OTHERS']
                               .map((s) => DropdownMenuItem(value: s, child: Text(s)))
                               .toList(),
                           onChanged: (value) => setState(() => _type = value!),
