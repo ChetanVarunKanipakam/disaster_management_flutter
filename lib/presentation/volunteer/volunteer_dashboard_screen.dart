@@ -213,19 +213,19 @@ class _VolunteerDashboardContentState extends State<VolunteerDashboardContent> {
 
         return Column(
           children: [
-            SizedBox(
-              height: 250,
-              child: GoogleMap(
-                initialCameraPosition: const CameraPosition(
-                  target: LatLng(37.7749, -122.4194),
-                  zoom: 11,
-                ),
-                onMapCreated: (GoogleMapController controller) {
-                  _mapController = controller;
-                },
-                markers: markers,
-              ),
-            ),
+            // SizedBox(
+            //   height: 250,
+            //   child: GoogleMap(
+            //     initialCameraPosition: const CameraPosition(
+            //       target: LatLng(37.7749, -122.4194),
+            //       zoom: 11,
+            //     ),
+            //     onMapCreated: (GoogleMapController controller) {
+            //       _mapController = controller;
+            //     },
+            //     markers: markers,
+            //   ),
+            // ),
             Expanded(
               child: _buildIncidentList(provider, pendingIncidents),
             ),

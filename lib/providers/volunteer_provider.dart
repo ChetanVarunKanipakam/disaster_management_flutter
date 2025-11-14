@@ -28,6 +28,8 @@ class VolunteerProvider extends ChangeNotifier {
   List<IncidentModel> _assignedIncidents = [];
   List<IncidentModel> get assignedIncidents => _assignedIncidents;
 
+
+
   VolunteerProfileModel? _volunteerProfile;
   VolunteerProfileModel? get volunteerProfile => _volunteerProfile;
 
@@ -62,7 +64,7 @@ class VolunteerProvider extends ChangeNotifier {
     _isLoading = false;
     notifyListeners();
   }
-
+  
   // *** CORRECTED FUNCTION ***
   Future<void> toggleAvailability(String userId, bool newAvailability) async {
     // Do nothing if the profile hasn't been loaded yet.

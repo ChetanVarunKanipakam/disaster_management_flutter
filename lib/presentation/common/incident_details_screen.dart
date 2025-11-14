@@ -94,7 +94,7 @@ class IncidentDetailsScreen extends StatelessWidget {
             const SizedBox(height: 16),
             Row(
               children: [
-                _buildStatusChip('Status', incident.status, _getStatusColor(incident.status)),
+                _buildStatusChip('Status', incident.status=="IN_PROGRESS"?"InProgress":incident.status, _getStatusColor(incident.status)),
                 const SizedBox(width: 12),
                 _buildStatusChip('Severity', incident.severity, _getSeverityColor(incident.severity)),
               ],
